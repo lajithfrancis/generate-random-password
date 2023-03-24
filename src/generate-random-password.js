@@ -10,6 +10,7 @@ const { isBoolean } = require('./utils');
  *       symbols: boolean
  *   }} options 
  * @param {number} length 
+ * @param {boolean} strict 
  * @returns 
  */
 const gerenateRandomPassword = (options, length = 8, strict) => {
