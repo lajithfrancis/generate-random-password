@@ -13,9 +13,9 @@ const { isBoolean } = require('./utils');
  * @param {boolean} strict 
  * @returns 
  */
-const gerenateRandomPassword = (options, length = 8, strict) => {
+const generateRandomPassword = (options, length = 8, strict) => {
     if (length < 6 && strict === true) {
-        throw new Error('Password length should be atleast 6 when strict is opted');
+        throw new Error('Password length should be at least 6 when strict is opted');
     }
     const { possibleCombinations: pool, opt } = getPool(options)
     let password = '';
@@ -45,7 +45,7 @@ const gerenateRandomPassword = (options, length = 8, strict) => {
             }
         }
         if (Object.keys(destructured).some(pass => destructured[pass].count === 0 && destructured[pass].isNeeded === true)) 
-            return gerenateRandomPassword(options, length);
+            return generateRandomPassword(options, length);
     }
     return password;
 }
@@ -89,5 +89,5 @@ const getPossibleCombinations = (options) => {
 }
 
 module.exports = {
-    gerenateRandomPassword
+    generateRandomPassword
 }
