@@ -12,7 +12,10 @@ const { isBoolean } = require('./utils');
  * @param {number} length 
  * @returns 
  */
-const gerenateRandomPassword = (options, length = 10, strict) => {
+const gerenateRandomPassword = (options, length = 8, strict) => {
+    if (length < 6 && strict === true) {
+        throw new Error('Password length should be atleast 6 when strict is opted');
+    }
     const { possibleCombinations: pool, opt } = getPool(options)
     let password = '';
     for (let i = 0; i < length; i++) {
@@ -83,8 +86,6 @@ const getPossibleCombinations = (options) => {
     const mappedValues = Object.keys(options).map(type=> options[type] ? allCombinations[type] : '');
     return mappedValues.join('');
 }
-
-console.log('pass: ', gerenateRandomPassword({}, 6))
 
 module.exports = {
     gerenateRandomPassword
