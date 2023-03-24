@@ -1,0 +1,26 @@
+{
+  "name": "generate-random-password",
+  "version": "1.0.0",
+  "description": "Generate random alpha numeric password",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/generate-random-password.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lajithfrancis/generate-random-password.git"
+  },
+  "keywords": [
+    "generate",
+    "password"
+  ],
+  "author": "Lajith Francis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lajithfrancis/generate-random-password/issues"
+  },
+  "homepage": "https://github.com/lajithfrancis/generate-random-password#readme",
+  "dependencies": {
+    "lodash.random": "^3.2.0"
+  }
+}
