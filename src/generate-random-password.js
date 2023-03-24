@@ -1,6 +1,17 @@
 const random = require('lodash.random');
 const { isBoolean } = require('./utils');
 
+/**
+ * 
+ * @param {{
+ *       lowercase: boolean,
+ *       uppercase: boolean,
+ *       numbers: boolean,
+ *       symbols: boolean
+ *   }} options 
+ * @param {number} length 
+ * @returns 
+ */
 const gerenateRandomPassword = (options, length = 10) => {
     const pool = getPool(options)
     let password = '';
@@ -46,10 +57,6 @@ const getPossibleCombinations = (options) => {
     const mappedValues = Object.keys(options).map(type=> options[type] ? allCombinations[type] : '');
     return mappedValues.join('');
 }
-
-console.log('password generated: ', gerenateRandomPassword({
-    symbols: true
-}, 5));
 
 module.exports = {
     gerenateRandomPassword
