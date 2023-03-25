@@ -1,5 +1,5 @@
 {
-  "name": "random-password-generator",
+  "name": "random-secure-password-generator",
   "version": "1.0.0",
   "description": "Generate random alpha numeric password",
   "main": "index.js",
@@ -11,8 +11,11 @@
     "url": "git+https://github.com/lajithfrancis/generate-random-password.git"
   },
   "keywords": [
+    "random",
+    "secure",
     "generate",
-    "password"
+    "password",
+    "generator"
   ],
   "author": "Lajith Francis",
   "license": "ISC",
