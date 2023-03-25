@@ -11,8 +11,9 @@
     "url": "git+https://github.com/lajithfrancis/generate-random-password.git"
   },
   "keywords": [
-    "generate",
-    "password"
+    "password generator",
+    "password",
+    "random passwword"
   ],
   "author": "Lajith Francis",
   "license": "ISC",
