@@ -25,7 +25,7 @@ const generateRandomPassword = (options, length = 8, strict) => {
         
     }
     if (strict === true && length > 5) {
-        const { lowercase, uppercase, numbers, symbols } = getAllCombinations();
+        const { lowercase, uppercase, numbers } = getAllCombinations();
         const destructured = {
             lowercase: { count: 0, isNeeded: opt.lowercase },
             uppercase: { count: 0, isNeeded: opt.uppercase },
