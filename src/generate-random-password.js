@@ -87,7 +87,6 @@ const getPossibleCombinations = (options) => {
     const mappedValues = Object.keys(options).map(type=> options[type] ? allCombinations[type] : '');
     return mappedValues.join('');
 }
-console.log("random password: ", generateRandomPassword())
 
 module.exports = {
     generateRandomPassword
