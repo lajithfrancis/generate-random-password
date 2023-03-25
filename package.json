@@ -1,6 +1,6 @@
 {
-  "name": "generate-random-password",
-  "version": "1.0.0",
+  "name": "random-password-generator",
+  "version": "1.0.1-2",
   "description": "Generate random alpha numeric password",
   "main": "index.js",
   "scripts": {
