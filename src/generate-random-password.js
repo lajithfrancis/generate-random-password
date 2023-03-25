@@ -56,7 +56,7 @@ const getPool = (options) => {
         numbers: false,
         symbols: false
     }
-    Object.keys(options).map(key => {
+    options && Object.keys(options).map(key => {
         if (!isBoolean(options[key])) throw Error('should be boolean');
         opt[key] = options[key];
     })
