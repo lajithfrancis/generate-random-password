@@ -13,7 +13,7 @@ const { isBoolean } = require('./utils');
  * @param {boolean} strict 
  * @returns 
  */
-const generateRandomPassword = (options, length = 8, strict) => {
+const generateRandomPassword = (options, length = 8, strict = false) => {
     if (length < 6 && strict === true) {
         throw new Error('Password length should be at least 6 when strict is opted');
     }

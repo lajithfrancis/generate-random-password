@@ -45,11 +45,11 @@ Any of these can be passed into the options object for each function.
 | ----- | -------------------------------------- | ------------- |
 | lowercase        | Boolean, length of password.               | true  |
 | uppercase        | Boolean, put numbers in password.          | true  |
-| numbers          | Boolean, put symbols in password.| 8     |
+| numbers          | Boolean, put symbols in password.          | false |
 | symbols          | Boolean, put lowercase in password         | false |
  
 ### length {number}
-Description: For setting the length of the password. Default value is 10.
+Description: For setting the length of the password. Default value is 8.
 ### strict {boolean}
 Description: If set true, enables strict mode for at least having one character from each set. Default value is false
 
